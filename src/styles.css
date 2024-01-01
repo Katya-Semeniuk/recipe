@@ -1,0 +1,45 @@
+:root {
+  --primary-color: #662eed;
+  --secondary-color: #f9f7fe;
+  --white-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Nunito;
+  background-color: var(white-color);
+}
+
+li {
+  list-style-type: none;
+}
+img {
+  display: block;
+  width: 100%;
+}
+footer {
+  background-color: var(--secondary-color);
+}
+
+.hero-section {
+  margin-top: 62px;
+}
+
+.img-main-about {
+  width: 460px;
+  height: 450px;
+}
+
+/* contact */
+
+.contact-heading {
+  color: var(--primary-color);
+}
