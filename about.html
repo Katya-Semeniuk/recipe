@@ -29,107 +29,120 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">SheCodes</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" href="/">Home</a>
-            <a class="nav-link active" aria-current="page" href="/about.html"
-              >About me</a
-            >
-            <a class="nav-link" href="/recipe.html">Recipe</a>
-            <a class="nav-link" href="/contact.html">Contact</a>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">SheCodes</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="/">Home</a>
+              <a class="nav-link active" aria-current="page" href="/about.html"
+                >About me</a
+              >
+    
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-    <h1 class="mb-2">About Me</h1>
-    <section>
-      <div class="d-flex align-items-center">
-        <img
-          src="/pictures/about-main.jpg"
-          alt=""
-          class="border-4 img-main-about"
-        />
-        <div>
-          <h2>Shelley White</h2>
-          <p class="descriprion-about text-center">
-            Nisl faucibus quis urna nibh ut amet diam suscipit pretium massa
-            sollicitudin in risus in sagittis nisl faucibus quis urna nibh ut
-            amet diam suscipit pretium massa, sollicitudin in risus in.
-            Sagittis.
-          </p>
-          <div>Follow me</div>
-          <ul class="d-flex">
-            <li>
-              <a href="">Facebook</a>
-            </li>
-            <li>
-              <a href="">Insta</a>
-            </li>
-            <li>
-              <a href="">Lindn</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section>
-      <h3>Favorite Recipe</h3>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-4 mb-3">
-            <img
-              src="/pictures/recipe-1.jpg"
-              alt="Meal picture"
-              class="img-fluid rounded"
-            />
-            <h4>Wet Vegetable Spring Rolls</h4>
-            <p>
-              Id ac lorem maecenas rhoncus lobortis turpis morbi. Id ut lobortis
-              consectetur volutpat commodo mi suspendisse odio.
+    <main>
+      <section class="about-section">
+        <h1 class="title-about text-center">About Me</h1>
+        <div class="d-flex align-items-center">
+          <img
+            src="/pictures/about-main.jpg"
+            alt=""
+            class="border-4 d-none d-sm-block img-main-about"
+          />
+          <div class="about-description-wrap">
+            <h2 class="heading-name">Shelley White</h2>
+            <p class="about-descriprion-text ">
+              Nisl faucibus quis urna nibh ut amet diam suscipit pretium massa
+              sollicitudin in risus in sagittis nisl faucibus quis urna nibh ut
+              amet diam suscipit pretium massa, sollicitudin in risus in.
+              Sagittis.
             </p>
-          </div>
-          <div class="col-sm-4 mb-3">
-            <img
-              src="/pictures/recipe-2.jpg"
-              alt="Meal picture"
-              class="img-fluid rounded"
-            />
-            <h4>Wet Vegetable Spring Rolls</h4>
-            <p>
-              Id ac lorem maecenas rhoncus lobortis turpis morbi. Id ut lobortis
-              consectetur volutpat commodo mi suspendisse odio.
-            </p>
-          </div>
-          <div class="col-sm-4 mb-3">
-            <img
-              src="/pictures/recipe-3.jpg"
-              alt="Meal picture"
-              class="img-fluid rounded"
-            />
-            <h4>Wet Vegetable Spring Rolls</h4>
-            <p>
-              Id ac lorem maecenas rhoncus lobortis turpis morbi. Id ut lobortis
-              consectetur volutpat commodo mi suspendisse odio.
-            </p>
+            <div class="d-flex align-items-center">
+               <p class="heading-follow">Follow me:</p>
+             <ul class="d-flex">
+        <li ">
+          <a href="#"> <i class="fa-brands fa-square-facebook social-icon"></i> </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-instagram social-icon"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+           
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="fav-recipe-section">
+        <h3 class="text-center title-recipe">Favorite Recipe</h3>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 mb-4">
+              <img
+                src="/pictures/recipe-1.jpg"
+                alt="Meal picture"
+                class="img-fluid rounded"
+              />
+              <h4 class="meal-recipe-name">Wet Vegetable Spring Rolls</h4>
+              <p class="meal-description">
+                Id ac lorem maecenas rhoncus lobortis turpis morbi. Id ut
+                lobortis consectetur volutpat commodo mi suspendisse odio.
+              </p>
+            </div>
+            <div class="col-sm-4 mb-4">
+              <img
+                src="/pictures/recipe-2.jpg"
+                alt="Meal picture"
+                class="img-fluid rounded"
+              />
+              <h4 class="meal-recipe-name">Wet Vegetable Spring Rolls</h4>
+              <p class="meal-description">
+                Id ac lorem maecenas rhoncus lobortis turpis morbi. Id ut
+                lobortis consectetur volutpat commodo mi suspendisse odio.
+              </p>
+            </div>
+            <div class="col-sm-4 mb-4">
+              <img
+                src="/pictures/recipe-3.jpg"
+                alt="Meal picture"
+                class="img-fluid rounded"
+              />
+              <h4 class="meal-recipe-name">Wet Vegetable Spring Rolls</h4>
+              <p class="meal-description">
+                Id ac lorem maecenas rhoncus lobortis turpis morbi. Id ut
+                lobortis consectetur volutpat commodo mi suspendisse odio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer>
       <div class="logo-footer fw-bold">SheCodes</div>
       <ul class="social-link-list">

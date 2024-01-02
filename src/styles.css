@@ -37,7 +37,71 @@ html {
 body {
   font-family: var(--heading-font-family);
   background-color: var(white-color);
+  color: var(--text-dark-color);
 }
+
+.active {
+  color: var(--primary-color) !important;
+}
+.navbar-brand {
+  font-weight: 700;
+}
+
+/* ---index.html--- */
+
+main {
+  margin-top: 55px;
+}
+
+.hero-section {
+  background-image: url(/pictures/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--primary-color);
+  padding: 46px 5px;
+}
+
+.hero-title {
+  font-size: 52px;
+  line-height: 1.3;
+  @media (min-width: 576px) {
+    font-size: 72px;
+  }
+}
+
+.hero-text {
+  font-size: 24px;
+  line-height: 1.4;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.menu-section {
+  max-width: 1160px;
+  margin: 70px auto;
+
+  @media (min-width: 576px) {
+    margin: 100px auto;
+  }
+}
+
+.meal-name {
+  font-size: 20px;
+  margin-top: 10px;
+
+  @media (min-width: 576px) {
+    margin-top: 15px;
+    font-size: 28px;
+  }
+}
+.meal-item {
+  margin-bottom: 25px;
+  @media (min-width: 576px) {
+    margin-bottom: 50px;
+  }
+}
+
+/* footer */
 
 footer {
   background-color: var(--secondary-color);
@@ -52,76 +116,11 @@ footer {
   @media (min-width: 576px) {
     display: flex;
     justify-content: space-between;
-    flex-direction: ;
-  }
-}
-.active {
-  color: var(--primary-color) !important;
-}
-.navbar-brand {
-  font-weight: 700;
-}
-
-/* index.html */
-
-main {
-  margin-top: 55px;
-}
-.hero-section {
-  background-color: tomato;
-  color: var(--white-color);
-  padding: 46px 5px;
-}
-
-.hero-title {
-  font-size: 52px;
-  line-height: 1.3;
-  @media (min-width: 560px) {
-    font-size: 72px;
   }
 }
 
-.hero-text {
-  font-size: 24px;
-  line-height: 1.4;
-  max-width: 560px;
-  margin: 0 auto;
-}
-.img-main-about {
-  width: 460px;
-  height: 450px;
-}
-
-.menu-section {
-  max-width: 1160px;
-  margin: 70px auto;
-
-  @media (min-width: 560px) {
-    margin: 100px auto;
-  }
-}
-
-.meal-name {
-  font-size: 20px;
-  color: var(--text-dark-color);
-  margin-top: 10px;
-
-  @media (min-width: 560px) {
-    margin-top: 15px;
-    font-size: 28px;
-  }
-}
-.meal-item {
-  margin-bottom: 25px;
-  @media (min-width: 560px) {
-    margin-bottom: 50px;
-  }
-}
-
-/* footer */
 .logo-footer {
   font-size: 24px;
-  color: var(--text-dark-color);
 }
 
 .social-link-list {
@@ -142,11 +141,147 @@ main {
   font-family: var(--default-font-family);
   font-weight: 400;
   font-size: 16px;
-
-  color: var(--text-dark-color);
 }
-/* contact */
+
+/* about html */
+.about-section {
+  max-width: 960px;
+  margin: 95px auto 0 auto;
+  padding: 0 10px;
+}
+.title-about {
+  margin-bottom: 90px;
+  font-size: 52px;
+  line-height: 1.3;
+  @media (min-width: 576px) {
+    font-size: 72px;
+    margin-bottom: 110px;
+  }
+}
+
+.about-description-wrap {
+  @media (min-width: 576px) {
+    margin-left: 40px;
+  }
+}
+.img-main-about {
+  @media (min-width: 576px) {
+    width: 260px;
+    height: 250px;
+  }
+  @media (min-width: 768px) {
+    width: 460px;
+    height: 450px;
+  }
+}
+.heading-name {
+  font-size: 24px;
+  margin-bottom: 16px;
+  @media (min-width: 768px) {
+    font-size: 64px;
+    margin-bottom: 36px;
+  }
+}
+.about-descriprion-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 22px;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+    margin-bottom: 52px;
+  }
+}
+.heading-follow {
+  font-size: 18px;
+  font-weight: 700;
+  margin-right: 30px;
+}
+
+.social-icon {
+  margin-right: 20px;
+
+  @media (min-width: 768px) {
+    margin-right: 30px;
+  }
+}
+
+.fav-recipe-section {
+  max-width: 1160px;
+  margin: 80px auto;
+
+  @media (min-width: 576px) {
+    margin: 100px auto;
+  }
+}
+
+.title-recipe {
+  font-size: 36px;
+  line-height: 1.3;
+  margin-bottom: 21px;
+  @media (min-width: 576px) {
+    margin-bottom: 41px;
+  }
+}
+.meal-recipe-name {
+  font-size: 24px;
+  margin: 15px 0;
+
+  @media (min-width: 576px) {
+    margin: 20px 0;
+  }
+}
+
+.meal-description {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* contact html*/
+
+.title-contact {
+  font-size: 52px;
+  line-height: 1.3;
+  margin-top: 26px;
+  margin-bottom: 90px;
+  text-align: center;
+
+  @media (min-width: 576px) {
+    font-size: 72px;
+    margin-bottom: 110px;
+  }
+}
+.wrapper {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+  @media (min-width: 576px) {
+    margin-bottom: 100px;
+  }
+}
 
 .contact-heading {
+  font-size: 18px;
+  margin-bottom: 10px;
   color: var(--primary-color);
+  @media (min-width: 768px) {
+    margin-bottom: 15px;
+  }
+}
+.contact-item {
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+}
+
+.contact-data {
+  font-size: 16px;
+  margin-left: 15px;
+  @media (min-width: 768px) {
+    margin-left: 25px;
+    font-size: 24px;
+  }
 }
